@@ -7,7 +7,7 @@ var Button = function () {
 	
 	if (timesPressed > 2) {
 		setTimeout(myTimeout4, 10)
-		setTimeout(mytimeout3, 2000)	
+		setTimeout(myTimeout1, 2000)	
 		timesPressed = 0;
 		return
 	}
@@ -18,6 +18,7 @@ var Button = function () {
 }
 
 function myTimeout1() {
+	$("#button").css("width", "120px");
     document.getElementById("button").innerHTML = "Refresh";
 }
 function myTimeout2() {
